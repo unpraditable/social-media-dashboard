@@ -5,13 +5,13 @@ export default class UserService {
   }
 
   static getAlbums(id) {
-    return fetch(`${this.baseUrl}/users/${id}.albums`).then((response) =>
+    return fetch(`${this.baseUrl}/users/${id}/albums`).then((response) =>
       response.json()
     );
   }
 
   static getPosts(id) {
-    return fetch(`${this.baseUrl}/users/${id}.posts`).then((response) =>
+    return fetch(`${this.baseUrl}/users/${id}/posts`).then((response) =>
       response.json()
     );
   }
