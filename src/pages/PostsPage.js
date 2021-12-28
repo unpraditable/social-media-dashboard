@@ -7,7 +7,7 @@ export default function PostsPage() {
   let params = useParams();
 
   useEffect(() => {
-    UserService.getPosts(params.postsId).then((item) => {
+    UserService.getPosts(params.userId).then((item) => {
       setPosts(item);
     });
   }, []);

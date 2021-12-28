@@ -4,6 +4,7 @@ import UserPage from "./pages/UserPage";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import AlbumsPage from "./pages/AlbumsPage";
 import PostsPage from "./pages/PostsPage";
+import PhotosPage from "./pages/PhotosPage";
 
 function App() {
   return (
@@ -11,8 +12,10 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<UserPage />}></Route>
-          <Route path="albums/:albumsId" element={<AlbumsPage />}></Route>
-          <Route path="posts/:postsId" element={<PostsPage />}></Route>
+          <Route path="albums/:userId" element={<AlbumsPage />}></Route>
+          <Route path="photos/:albumsId" element={<PhotosPage />}></Route>
+
+          <Route path="posts/:userId" element={<PostsPage />}></Route>
         </Routes>
       </BrowserRouter>
     </div>

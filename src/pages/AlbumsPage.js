@@ -7,7 +7,7 @@ export default function AlbumsPage() {
   let params = useParams();
 
   useEffect(() => {
-    UserService.getAlbums(params.albumsId).then((item) => {
+    UserService.getAlbums(params.userId).then((item) => {
       setAlbums(item);
     });
   }, []);
