@@ -7,7 +7,7 @@ export default function PhotosPage() {
   let params = useParams();
 
   useEffect(() => {
-    AlbumService.getPhotos(params.albumsId).then((item) => {
+    AlbumService.getPhotos(params.albumId).then((item) => {
       setPhotos(item);
     });
   }, []);
